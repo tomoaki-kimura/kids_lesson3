@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>変数を使ってプログラミング</title>
+  </head>
+  <body>
+    <h3>名前を書いてみよう</h3>
+    <p>フォームの中に色々な名前を書いてみましょう。</p>
+
+    <img src="/robot.png" alt="ロボット画像">
+    <p>ようこそ<%= @name || "ゲスト" %>さん。</p>
+
+    <form action="/" method="GET">
+      <label>あなたのお名前: <input type="text" name="name" placeholder="ここに名前を書いてください"></label>
+      <input type="submit" value="送信">
+    </form>
+  </body>
+</html>
